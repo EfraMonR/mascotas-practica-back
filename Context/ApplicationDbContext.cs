@@ -10,6 +10,7 @@ namespace MascotasBack.Context
         }
 
         public DbSet<Users> Users { get; set; }
+        public DbSet<Pets> Pets { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
