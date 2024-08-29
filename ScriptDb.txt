@@ -1,0 +1,7 @@
+CREATE TABLE Users (
+    Id INT PRIMARY KEY IDENTITY(1,1),  -- Identificador único
+    Name NVARCHAR(100) NOT NULL,       -- Nombre del usuario
+    Identification NVARCHAR(100) NOT NULL,  -- Identificación (por ejemplo, cédula, DNI)
+    Email NVARCHAR(100) NOT NULL,      -- Correo electrónico
+    PasswordHash NVARCHAR(255) NOT NULL -- Contraseña (almacenada como hash)
+);
