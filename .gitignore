@@ -1,0 +1,80 @@
+# Ignorar archivos generados por Visual Studio
+*.user
+*.suo
+*.cache
+*.log
+bin/
+obj/
+ipch/
+.vs/
+
+# Ignorar archivos de respaldo
+*~
+
+# Ignorar archivos de compilación de Visual Studio
+*.dll
+*.pdb
+*.exe
+*.zip
+*.vsix
+*.appx
+
+# Ignorar archivos de configuración de MSBuild generados automáticamente
+*.Cache
+*.csproj.user
+*.vspscc
+*.vssscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+*.lib
+*.sbr
+*.sdf
+*.pyc
+*.xml
+*.docstates
+
+# Ignorar archivos de ReSharper
+_ReSharper*/
+*.resharper
+[Tt]est[Rr]esult*
+
+# Ignorar archivos de StyleCop
+StyleCopReport.xml
+
+# Ignorar archivos de código R
+.Rproj.user
+.Rhistory
+.RData
+
+# Ignorar archivos de Visual Studio Code
+.vscode/
+
+# Ignorar archivos de Node.js
+node_modules/
+
+# Ignorar archivos de TypeScript
+*.js
+*.map
+
+# Ignorar archivos de Angular
+/dist/
+/tmp/
+
+# Ignorar archivos de Angular CLI
+/angular.json
+/.browserslistrc
+/karma.conf.js
+/tsconfig.json
+/tslint.json
+
+# Ignorar binarios y objetos en subproyectos
+**/bin/
+**/obj/
