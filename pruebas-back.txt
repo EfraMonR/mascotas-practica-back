@@ -1,0 +1,55 @@
+{
+  "name": "Efrain Montealegre Raga",
+  "identification": "1014212119",
+  "email": "efrain.montealegre@gmail.com",
+  "passwordHash": "Nuevo1234*"
+}
+
+{
+  "email": "efrain.montealegre@gmail.com",
+  "password": "Nuevo1234*"
+}
+
+
+--------------Mascotas---
+
+Insertar
+{
+  "name": "Ramon",
+  "breed": "Criollo",
+  "type": "Gato",
+  "age": 10,
+  "owner": "Efrain Montealegre",
+  "user": "efrain.montealegre@gmail.com"
+}
+
+{
+  "name": "Muñeca",
+  "breed": "Criollo",
+  "type": "Perro",
+  "age": 16,
+  "owner": "Dario Montealegre",
+  "user": "darandres_25@hotmail.com"
+}
+
+{
+  "name": "Prueba",
+  "breed": "Criollo",
+  "type": "Perro",
+  "age": 16,
+  "owner": "Prueba",
+  "user": "Prueba"
+}
+
+Modificar
+{
+  "name": "Muñeca",
+  "breed": "Criollo",
+  "type": "Perro",
+  "age": 15,
+  "owner": "Leidy Montealegre",
+  "user": "leidy_12@hotmail.com"
+}
+
+17.3
+npm install -g @angular/cli@17.3 --force
