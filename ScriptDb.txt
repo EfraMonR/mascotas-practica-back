@@ -1,7 +1,25 @@
+CREATE DATABASE Mascotas
+GO
+
+USE Mascotas
+
 CREATE TABLE Users (
-    Id INT PRIMARY KEY IDENTITY(1,1),  -- Identificador único
-    Name NVARCHAR(100) NOT NULL,       -- Nombre del usuario
-    Identification NVARCHAR(100) NOT NULL,  -- Identificación (por ejemplo, cédula, DNI)
-    Email NVARCHAR(100) NOT NULL,      -- Correo electrónico
-    PasswordHash NVARCHAR(255) NOT NULL -- Contraseña (almacenada como hash)
+    Id INT PRIMARY KEY IDENTITY(1,1), 
+    Name NVARCHAR(100) NOT NULL,
+    Identification NVARCHAR(100) NOT NULL,
+    Email NVARCHAR(100) NOT NULL,
+    PasswordHash NVARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Pets (
+	Id INT PRIMARY KEY IDENTITY(1,1),
+	Name NVARCHAR(100) NOT NULL,
+	Type NVARCHAR(100) NOT NULL,
+	Breed NVARCHAR(100) NOT NULL,
+	Age INT NOT NULL,
+	Owner NVARCHAR(100) NOT NULL,
+	CreationDate DATE NULL,
+	ModificationDate DATE NULL,
+	CreationUser NVARCHAR(100) NULL,
+	ModificationUser NVARCHAR(100) NULL
 );

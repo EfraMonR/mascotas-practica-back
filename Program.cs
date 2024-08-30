@@ -4,6 +4,17 @@ using MascotasBack.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+// Configura CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin",
+        builder =>
+        {
+            builder.WithOrigins("http://localhost:4200") // URL de tu aplicación Angular
+                   .AllowAnyMethod()
+                   .AllowAnyHeader();
+        });
+});
 
 // Add services to the container.
 
@@ -27,6 +38,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors("AllowSpecificOrigin");
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
